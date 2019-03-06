@@ -1,6 +1,6 @@
-# nuxt-showcase
+# Nuxt Showcase
 
-> Website where I showcase my skills using Nuxt &amp; Vuetify
+> Google's Material Design is a real knocker, coupled with the power of Nuxt makes for an interesting combo. Let's take this showcase to the limits of both
 
 ## Build Setup
 

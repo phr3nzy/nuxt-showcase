@@ -14,7 +14,6 @@
     </v-navigation-drawer>
     <v-toolbar color="transparent" :clipped-left="clipped" flat fixed app>
       <v-toolbar-side-icon class="white--text" @click="drawer = !drawer"/>
-      <v-toolbar-title class="white--text" v-text="title"/>
     </v-toolbar>
     <v-content id="background_svg">
       <v-container>
@@ -50,6 +49,17 @@ export default {
   }
 }
 </script>
+
+<style>
+.slight-br {
+  border-radius: 15px;
+}
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+</style>
+
 
 <style scoped>
 #background_svg {

@@ -9,7 +9,7 @@ module.exports = {
   ** Headers of the page
   */
 	head: {
-		title: 'Nuxtify Showcase',
+		title: 'Nuxify Showcase',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -75,8 +75,8 @@ module.exports = {
 	** Manifest setup
 	*/
 	manifest: {
-		name: 'Nuxtify - Nuxt & Vuetify Showcase',
-		short_name: 'Nuxtify',
+		name: 'Nuxify - Nuxt & Vuetify Showcase',
+		short_name: 'Nuxify',
 		lang: 'en',
 		display: 'standalone',
 		start_url: '/',

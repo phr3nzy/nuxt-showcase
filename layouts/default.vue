@@ -23,7 +23,7 @@
     <v-footer color="transparent" :fixed="fixed" app>
       <v-flex class="white--text" text-xs-center xs12>
         &copy; 2019
-        Nuxtify | All Rights Reserved
+        Nuxify | All Rights Reserved
       </v-flex>
     </v-footer>
   </v-app>
@@ -44,7 +44,7 @@ export default {
           to: '/'
         }
       ],
-      title: 'Nuxtify'
+      title: 'Nuxify'
     }
   }
 }

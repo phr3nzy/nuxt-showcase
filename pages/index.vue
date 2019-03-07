@@ -25,76 +25,41 @@
       </v-responsive>
     </v-layout>
 
-    <v-layout row justify-center align-center>
+    <v-layout class="mb-5" row justify-center align-center>
       <v-btn href="#2nd_layout" class="hvr-down" huge flat fab :ripple="false" color="transparent">
         <v-icon color="white">expand_more</v-icon>
       </v-btn>
     </v-layout>
 
-    <v-layout id="2nd_layout" row justify-center align-center>
-      <v-card color="transparent" flat>
-        <v-timeline class="slight-br">
-          <v-timeline-item color="primary lighten-2" fill-dot right>
-            <v-card hover style="border-radius: 20px;">
-              <v-card-title class="primary lighten-2">
-                <v-icon dark size="42" class="mr-3">search</v-icon>
-                <h2 class="display-1 white--text font-weight-light">Search by Name</h2>
-              </v-card-title>
-              <v-container>
-                <v-layout justify-center align-center>
-                  <v-flex xs10>
-                    <h1
-                      class="subheading"
-                    >Our Database contains all well known medicine. Search using name, medicine number or scientific name!</h1>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-card>
-          </v-timeline-item>
-
-          <v-timeline-item color="secondary lighten-1" fill-dot left small>
-            <v-card hover style="border-radius: 20px;">
-              <v-card-title class="secondary lighten-1 justify-end">
-                <h2 class="display-1 mr-3 white--text font-weight-light">Get Directions</h2>
-                <v-icon dark size="42">directions</v-icon>
-              </v-card-title>
-              <v-container>
-                <v-layout justify-center align-center>
-                  <v-flex xs10>
-                    <h1
-                      class="subheading"
-                    >Find directions to all the pharmacies closest to you with the medicine you need!</h1>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-card>
-          </v-timeline-item>
-
-          <v-timeline-item color="secondary darken-2" fill-dot right>
-            <v-card hover style="border-radius: 20px;">
-              <v-card-title class="secondary darken-2">
-                <v-icon class="mr-3" dark size="42">sentiment_very_satisfied</v-icon>
-                <h2 class="display-1 white--text font-weight-light">Stay Healthy</h2>
-              </v-card-title>
-              <v-container>
-                <v-layout justify-center align-center>
-                  <v-flex xs10>
-                    <h1
-                      class="subheading"
-                    >Your health is our top most priority. Access to medicine must be avaliable to all and many!</h1>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-card>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card>
+    <v-layout class="my-5" id="2nd_layout" row justify-center align-center>
+      <v-carousel class="slight-br" hide-delimiters hide-controls>
+        <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
+      </v-carousel>
     </v-layout>
   </v-layout>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      items: [
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>

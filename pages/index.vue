@@ -4,8 +4,8 @@
       <v-responsive class="slight-br" width="100%" id="bg_pattern" height="600" dark>
         <v-container class="white--text slight-br" style="margin-top: 14rem;">
           <v-layout align-center column justify-center>
-            <h1 class="display-3 font-weight-thick mb-3">Nuxify {{name}}</h1>
-            <h3 class="subheading">Where Power and Beauty meet</h3>
+            <h1 class="display-3 font-weight-thick mb-3">Nuxify</h1>
+            <h3 class="subheading">where Power and Beauty meet</h3>
           </v-layout>
         </v-container>
       </v-responsive>
@@ -14,20 +14,12 @@
 </template>
 
 <script>
-export default {
-  asyncData() {
-    return new Promise(resolve => {
-      setTimeout(function() {
-        resolve({ name: 'world' })
-      }, 2000)
-    })
-  }
-}
+export default {}
 </script>
 
 <style scoped>
 #bg_pattern {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   background-size: 10rem;
 }
 </style>

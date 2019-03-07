@@ -54,6 +54,14 @@ export default {
 .slight-br {
   border-radius: 15px;
 }
+/* .hvr-down {
+  transform: translateY(0px);
+  transition: 500ms;
+} */
+.hvr-down:hover {
+  transition: 0.5s;
+  transform: translateY(5px);
+}
 * {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;

@@ -1,42 +1,48 @@
 <template>
-  <v-layout column wrap>
-    <v-layout row>
-      <v-container
-        justify-center
-        align-center
-        class="white--text slight-br"
-        style="margin-top: 14rem;"
-      >
-        <v-layout align-center column justify-center>
-          <h1 class="display-3 font-weight-thick mb-3">Nuxify</h1>
-          <h3 class="subheading">where Power and Beauty meet</h3>
-          <v-btn
-            to="/"
-            color="white"
-            class="secondary--text px-5"
-            raised
-            round
-            ripple
-            large
-          >Discover</v-btn>
-        </v-layout>
-      </v-container>
+  <v-layout mt-5 column justify-center align-center row>
+    <v-layout row my-5>
+      <v-flex xs12>
+        <v-responsive>
+          <v-container justify-center align-center class="white--text slight-br" my-5>
+            <v-layout align-center column justify-center>
+              <h1 class="display-3 font-weight-thick mb-3">Nuxify</h1>
+              <h3 class="subheading">where Power and Beauty meet</h3>
+              <v-btn
+                to="/"
+                color="white"
+                class="secondary--text px-5"
+                raised
+                round
+                ripple
+                large
+              >Discover</v-btn>
+            </v-layout>
+          </v-container>
+        </v-responsive>
+      </v-flex>
     </v-layout>
 
-    <v-layout mb-5 row justify-center align-center>
+    <v-layout mt-4 mb-5 row justify-center align-center>
       <v-btn @click="scrollTo" class="hvr-down" huge flat fab :ripple="false" color="transparent">
         <v-icon color="white">expand_more</v-icon>
       </v-btn>
     </v-layout>
 
-    <v-layout class="my-5" row justify-center align-center>
+    <v-layout my-5 row justify-center align-center>
       <v-item-group>
         <v-container grid-list-md>
-          <v-layout row wrap>
-            <v-flex v-for="(item, index) in items" :key="index" class="pa-5" xs12 sm4>
+          <v-layout my-5 row wrap>
+            <v-flex v-for="(item, index) in items" :key="index" xs12 sm4>
               <v-item>
-                <v-card flat :elevation="24" style="border-radius: 25px;">
-                  <v-icon color="secondary" size="200">{{item.icon}}</v-icon>
+                <v-card
+                  justify-center
+                  align-center
+                  flat
+                  class="pa-5"
+                  :elevation="24"
+                  style="border-radius: 25px;"
+                >
+                  <v-icon color="secondary" size="150">{{item.icon}}</v-icon>
                 </v-card>
               </v-item>
             </v-flex>

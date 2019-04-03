@@ -24,21 +24,16 @@
       </v-btn>
     </v-layout>
 
-    <v-layout my-5 row justify-center align-center fill-height>
+    <v-layout row justify-center align-center fill-height>
       <v-item-group>
         <v-container grid-list-md>
-          <v-layout my-5 row wrap>
+          <v-layout align-center justify-center row wrap>
             <v-flex v-for="(item, index) in items" :key="index" xs12 sm4>
               <v-item>
-                <v-card
-                  justify-center
-                  align-center
-                  flat
-                  class="pa-5"
-                  :elevation="24"
-                  style="border-radius: 25px;"
-                >
-                  <v-icon color="secondary" size="150">{{item.icon}}</v-icon>
+                <v-card flat color="transparent" :elevation="24" style="border-radius: 25px;">
+                  <v-card-text>
+                    <v-icon color="white" size="20rem">{{item.icon}}</v-icon>
+                  </v-card-text>
                 </v-card>
               </v-item>
             </v-flex>

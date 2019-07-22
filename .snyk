@@ -1,8 +1,69 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.3
+version: v1.13.5
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-AXIOS-174505:
     - '@nuxtjs/axios > axios':
         patched: '2019-05-05T23:25:26.279Z'
+  SNYK-JS-LODASH-450202:
+    - nuxt > @nuxt/webpack > hard-source-webpack-plugin > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > snyk-php-plugin > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - '@nuxtjs/pwa > @nuxtjs/workbox > lodash':
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > webpack-bundle-analyzer > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > html-webpack-plugin > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/builder > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > css-loader > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @babel/core > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - '@nuxtjs/axios > @nuxtjs/proxy > http-proxy-middleware > lodash':
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/core > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > thread-loader > async > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @babel/core > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/plugin-proposal-decorators > @babel/helper-create-class-features-plugin > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-03T23:25:27.867Z'
